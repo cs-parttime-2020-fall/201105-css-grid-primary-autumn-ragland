@@ -1,0 +1,64 @@
+body {
+    text-align: center;
+}
+
+/* styling parent container to display grid with 5 equal width columns and auto rows */
+.container {
+    border : 6px solid black;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/* styling all nested elements of the container element */
+.container > * {
+    border : 1px solid black;
+    padding : 50px;
+    margin : 5px;
+}
+
+header {
+    background-color: red;
+    grid-column: 1/6;
+    grid-row : 1;
+}
+
+footer {
+    background-color: red;
+    grid-column: 2/5;
+    grid-row: 4;
+}
+
+#leftDiv {
+    background-color: yellow;
+    grid-column: 1;
+    grid-row: 2/5;
+}
+
+#rightDiv {
+    background-color: orange;
+    grid-column: 5;
+    grid-row: 2/5;
+}
+
+#sectOne {
+    background-color: green;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#sectTwo {
+    background-color: blue;
+    grid-column: 3/5;
+}
+
+#sectThree {
+    background-color: yellowgreen;
+    grid-column: 2/4;
+    grid-row: 3;
+}
+
+#sectFour {
+    background-color: cornflowerblue;
+    grid-column: 4;
+    grid-row: 3;
+}
